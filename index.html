@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel=stylesheet href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+   <form id="survey-form">
+        <label>Name <input id="name" type="text"  placeholder="Enter your Name" required/> </label>
+        <label>email <input id="name" type="text" placeholder="Enter your email address" required></label>
+        <label>Age (optional) <input id="number" type="number" placeholder="Age" required min="18" max="100"></label>
+        <label>Which option best describes your current role?
+    <select id="dropdown">
+            <option>Select current role</option>
+            <option>Fullstack Web developer</option>
+            <option>Back end Engineer</option>
+            <option>Data Science Engineer</option>
+    </select>
+    </label>
+    <label>Would you recommend freeCodeCamp to a friend
+    </label>
+    <label> <input type="radio" name="choose"> Definitely</label>
+    <label> <input type="radio" name="choose"> Maybe</label>
+    <label> <input type="radio" name="choose"> Not Sure</label>
+    <label>What is your favourite feature of freeCodeCamp?
+        <select id="dropdown">
+            <option value="">Select an option</option>
+            <option value="1">Challenges</option>
+            <option value="2">Projects</option>
+            <options value="3">Discussions</options>
+            <options value="4">Seminars</options>
+        </select>
+    </label>
+    <label>What would you like to see improved? (Check all that apply) 
+        <label><input type="checkbox" value="1"> Front-end Projects</label>
+        <label><input type="checkbox" value="2"> Back-end Projects </label>
+        <label><input type="checkbox" value="3"> Data Visualizations </label>
+        <label><input type="checkbox" value="4"> Challenges </label>
+    </label>
+    <textarea></textarea>
+<input id="submit" type="submit" value="submit">
+   </form>
+</body>
+</html>
